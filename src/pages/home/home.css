@@ -1,0 +1,99 @@
+.home-container{
+    width: 100%;
+}
+.landing{
+    /* border: 2px solid red; */
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+
+}
+.color{
+    height: 43vw;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    position: fixed;
+    top: -20vw;
+    z-index: -1;
+    width: 100%;
+}
+.landing-information{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid green;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.landing-text{
+    height: 500px;
+    width: auto;
+    max-width: 800px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    align-items: baseline;
+        padding: 5px 40px;
+}
+.landing-image{
+    height: 500px;
+    min-width: 600px;
+    border: 2px solid blue;
+    background: url("../../../public/images/3434.jpg") no-repeat center center/cover;
+}
+.information-basic{
+    /* border: 2px solid rgb(201, 215, 6); */
+    width: 100%;
+    height: 400px;
+}
+.landing-text-title-1{
+    font-size: 3.1rem;
+    font-family: "Montserrat", Sans-serif;
+    color: rgb(24 27 49 / 69%);
+    margin: 8px 5px;
+}
+.landing-text-title-2{
+    font-size: 2.5rem;
+    font-family: "Montserrat", Sans-serif;
+    color: rgba(41, 46, 84, 0.69);
+    margin: 15px 5px;
+}
+.landing-text-para{
+    font-size: 1.6rem;
+    font-family: "Montserrat", Sans-serif;
+    color: rgb(0, 0, 0);
+    width: 80%;
+    text-align: justify;
+    margin: 15px 5px;
+}
+@media (max-width: 991px){
+    .landing-text{
+        height: 500px;
+        width: 100%;
+        margin: 0px;
+        /* border: 2px solid black; */
+        align-items: baseline;
+        padding: 5px 40px;
+    }
+    .landing-image{
+        height: 500px;
+        width: 100%;
+        margin: 0px;
+        /* border: 2px solid blue; */
+    }
+    .landing-text-title-1{
+        font-size: 3rem;
+    }
+    .landing-text-title-2{
+        font-size: 2rem;
+
+    }
+    .landing-text-para{
+        font-size: 1.2rem;
+    }
+}
