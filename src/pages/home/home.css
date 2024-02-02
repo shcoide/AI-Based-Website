@@ -1,5 +1,6 @@
 .home-container{
     width: 100%;
+    
 }
 .landing{
     /* border: 2px solid red; */
@@ -9,18 +10,38 @@
 
 }
 .color{
-    height: 43vw;
+    height: 40vw;
     background-color: antiquewhite;
     border-radius: 50%;
-    position: fixed;
-    top: -20vw;
+    position: absolute;
+    top: -14vw;
     z-index: -1;
     width: 100%;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 .landing-information{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     position: relative;
     top: 0px;
     width: 100%;
@@ -32,7 +53,7 @@
     height: 500px;
     width: auto;
     max-width: 800px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,14 +64,10 @@
 .landing-image{
     height: 500px;
     min-width: 600px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     background: url("../../../public/images/3434.jpg") no-repeat center center/cover;
 }
-.information-basic{
-    /* border: 2px solid rgb(201, 215, 6); */
-    width: 100%;
-    height: 400px;
-}
+
 .landing-text-title-1{
     font-size: 3.1rem;
     font-family: "Montserrat", Sans-serif;
@@ -70,6 +87,214 @@
     width: 80%;
     text-align: justify;
     margin: 15px 5px;
+}
+.information-basic{
+    /* border: 2px solid rgb(201, 215, 6); */
+    width: 100%;
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.icon{
+    margin: 25px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fa{
+    font-size: 3rem;
+    /* border: 2px solid red; */
+    width: 5.5rem;
+    height:5.5rem;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 50%;
+}
+.homepage-register{
+    width: 95%;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    margin: 5px auto;
+    margin-bottom: 0px;
+    padding: 5px;
+    display: flex;
+    background-color: rgb(8, 18, 109);
+}
+.homepage-register-text{
+    width: 50%;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.homepage-register-button{
+    /* border: 2px solid black; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.homepage-register-button>button{
+    display: flex;
+    padding: 10px;
+    border-radius: 45px;
+    color: rgb(8, 18, 109);
+}
+.arrow{
+    margin-left:8px ;
+}
+.magic-border{
+    display: flex;
+    width: 95%;
+    margin: 5px auto;
+    margin-top: 1px;
+}
+.magic-border-color1{
+    border: 3px solid rgb(255, 1, 1);
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 20%;
+}
+.magic-border-color2{
+    border: 3px solid rgb(101, 103, 223);
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 20%;
+}
+.magic-border-color3{
+    border: 3px solid rgb(115, 255, 1);
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 20%;
+}
+.magic-border-color4{
+    border: 3px solid rgb(255, 175, 2);
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 20%;
+}
+.magic-border-color5{
+    border: 3px solid rgb(0, 252, 126);
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 20%;
+}
+.homepage-about-section{
+    width: 100%;
+    /* height: 500px; */
+    /* border: 2px solid red; */
+    background-color: rgb(88 202 165 / 24%)
+}
+.homepage-about-section-image{
+    height: 500px;
+    min-width: 600px;
+    background: url("../../../public/images/business-startup-launch-1.png") no-repeat center center/cover;
+}
+.homepage-about-section-text{
+    /* border: 2px solid red; */
+    font-family: "Montserrat", Sans-serif;
+    padding: 10px 20px;
+}
+.homepage-about-section-text>h1{
+    font-size: 3rem;
+    color: rgb(114, 93, 93,0.6);
+    margin: 8px 5px;
+}
+.homepage-about-section-text>h2{
+    font-size: 1.7rem;
+    color:rgb(0, 0, 0,0.8);
+    margin: 18px 5px;
+}
+.homepage-about-section-text>p{
+    font-size: 1.2rem;
+    margin: 8px 5px;
+}
+.homepage-impact-section{
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 30px 20px;
+    background-color: azure;
+}
+.homepage-impact-section>h1{
+    font-size: 2.4rem;
+    margin: 30px 30px;
+
+}
+.homepage-impact-section-text{
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+}
+.homepage-impact-points{
+    display: flex;
+    padding: 10px 10px;
+    /* border: 2px solid red; */
+}
+.points-circle{
+    /* border: 2px solid red; */
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #0011ff;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.margin{
+    margin: 0px 10px;
+}
+.points-combo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 0px 10px;
+}
+.points-line{
+    border: 1.5px solid rgb(7, 7, 7,0.3);
+    height: 50px;
+    width: 0px;
+    
+}
+.points-text{
+    /* border: 2px solid red; */
+    max-width: 90%;
+    margin: 0px 20px;
+    padding: 0px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#p1:hover{
+    #pc1{
+        background-color: rgba(22, 33, 235, 0.9);
+        color: white;
+    }
+}
+#p2:hover{
+    #pc2{
+        background-color: rgba(22, 33, 235, 0.9);
+        color: white;
+    }
+}
+#p3:hover{
+    #pc3{
+        background-color: rgba(22, 33, 235, 0.9);
+        color: white;
+    }
+}
+.homepage-impact-section-image{
+    width: 100%;
+   
+}
+.homepage-impact-section-image>img{
+    width: 100%;
 }
 @media (max-width: 991px){
     .landing-text{
